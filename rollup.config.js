@@ -11,15 +11,6 @@ export default {
         file: 'bin/erun.js',
         format: 'umd',
     },
-    external: [
-        'commander',
-        'inquirer',
-        'ora',
-        'chalk',
-        'child_process',
-        'fs',
-        'path',
-        'events',
-    ],
+    external: [],
     plugins: [resolve(), commonjs(), json(), typescript(), terser()],
 }
