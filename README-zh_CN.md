@@ -3,7 +3,7 @@
 <div align="center">
 让你的 script 命令更快跑起来！
 
-[English]('./README.md) | 简体中文
+[English](./README.md) | 简体中文
 
 </div>
 ## 简述
