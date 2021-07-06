@@ -1,0 +1,54 @@
+{
+  "name": "easyrun",
+  "version": "1.0.0",
+  "description": "Let your script command run more simple!",
+  "author": "liuarui <liuwenrui597@qq.com>",
+  "license": "MIT",
+  "keywords": [
+    "easyrun",
+    "scripts",
+    "npm",
+    "yarn",
+    "run scrips",
+    "utils",
+    "helper"
+  ],
+  "bin": {
+    "erun": "./bin/erun.js"
+  },
+  "bugs": {
+    "url": "https://github.com/liuarui/easyrun/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liuarui/easyrun.git"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "dev": "rollup -c --watch",
+    "build": "rm -rf ./bin && rollup -c",
+    "erun": "node ./bin/erun.js",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "@types/inquirer": "^7.3.1",
+    "chalk": "^4.1.1",
+    "commander": "^7.2.0",
+    "eslint": "^7.26.0",
+    "inquirer": "^8.0.0",
+    "ora": "^5.4.0",
+    "rollup": "^2.48.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.3.5"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
