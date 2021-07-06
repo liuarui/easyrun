@@ -6,6 +6,7 @@ Let your script command run more simple!
 English | [简体中文](./README-zh_CN.md)
 
 </div>
+
 ## desc
 
 Do you have the same troubles like me?
@@ -39,6 +40,19 @@ Do you have the same troubles like me?
     ```
 
     > TODO: `-r` Follow-up to make a list of options, one-click operation
+
     > TODO: `-m` Follow-up to make a list of Multiple choice, one-click operation
 
 -   ... TODO
+
+## CHANGELOG
+
+[CHANGELOG](./CHANGELOG.md)
+
+## end
+
+If you feel helpful, you can come to [Github](https://github.com/liuarui/easyrun) give me a star, your ✨ is the biggest encouragement to me ~
+
+> If you really like, 🤓🤓🤓 you can ask the author to drink a cup of coffee☕️
+
+ <img src="./coffee.jpg" alt="coffee" style="width:60px height:60px;" />

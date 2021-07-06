@@ -6,6 +6,7 @@
 [English](./README.md) | 简体中文
 
 </div>
+
 ## 简述
 
 你是否有跟我一样的烦恼？
@@ -39,6 +40,19 @@
     ```
 
     > TODO: `-r` 后续通过该参数输出一个可选择列表，选择后运行该命令
+
     > TODO: `-m` 后续通过该参数输出一个多选列表，选择后一次性跑多个命令
 
 -   ... TODO
+
+## CHANGELOG
+
+[CHANGELOG](./CHANGELOG.md)
+
+## 最后
+
+如果觉得好用的话，可以来 [GitHub](https://github.com/liuarui/easyrun) 给我点个 star，你的 ✨ 是对我最大的鼓励～
+
+> 实在喜欢到不得了的话，🤓🤓🤓，还可以请作者喝杯咖啡 ☕️
+
+ <img src="./coffee.jpg" alt="coffee" style="width:60px height:60px;" />
