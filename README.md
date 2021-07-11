@@ -25,25 +25,49 @@ Do you have the same troubles like me?
 
 ## command
 
--   `erun l`
-    output your project scripts list
+### `erun [option]`
 
-    ```
-    🆒 Your project has the following script.
-    -----------------------------------------
-    {
-    dev: 'rollup -c --watch',
-    build: 'rm -rf ./bin && rollup -c',
-    erun: 'node ./bin/erun.js'
-    }
-    -----------------------------------------
-    ```
+#### feat
 
-    > TODO: `-r` Follow-up to make a list of options, one-click operation
+-   output your project scripts list
+-   exec script
 
-    > TODO: `-m` Follow-up to make a list of Multiple choice, one-click operation
+#### options
 
--   ... TODO
+-   `-r` Select a command from the list to execute
+-   TODO: `-m` Follow-up to make a list of Multiple choice, one-click operation
+
+#### example
+
+-   `erun`
+
+```
+
+🆒 Your project has the following script.
+-----------------------------------------
+{
+dev: 'rollup -c --watch',
+build: 'rm -rf ./bin && rollup -c',
+erun: 'node ./bin/erun.js'
+}
+-----------------------------------------
+```
+
+-   `erun -r`
+
+```bash
+ Please select the command you want to execute (Use arrow keys)
+❯ dev
+  build
+  erun
+  changelog
+  prepublish
+
+ ...
+ npm run dev
+```
+
+### ... TODO
 
 ## CHANGELOG
 

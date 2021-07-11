@@ -25,25 +25,49 @@
 
 ## 命令
 
--   `erun l`
-    输出你的项目的`scripts`列表
+### `erun [option]`
 
-    ```
-    🆒 Your project has the following script.
-    -----------------------------------------
-    {
-    dev: 'rollup -c --watch',
-    build: 'rm -rf ./bin && rollup -c',
-    erun: 'node ./bin/erun.js'
-    }
-    -----------------------------------------
-    ```
+#### feat
 
-    > TODO: `-r` 后续通过该参数输出一个可选择列表，选择后运行该命令
+-   output your project scripts list
+-   执行命令
 
-    > TODO: `-m` 后续通过该参数输出一个多选列表，选择后一次性跑多个命令
+#### options
 
--   ... TODO
+-   `-r` 选择一条 script 执行
+-   TODO: `-m` 后续通过该参数输出一个多选列表，选择后一次性跑多个命令
+
+#### example
+
+-   `erun`
+
+```
+
+🆒 Your project has the following script.
+-----------------------------------------
+{
+dev: 'rollup -c --watch',
+build: 'rm -rf ./bin && rollup -c',
+erun: 'node ./bin/erun.js'
+}
+-----------------------------------------
+```
+
+-   `erun -r`
+
+```bash
+ Please select the command you want to execute (Use arrow keys)
+❯ dev
+  build
+  erun
+  changelog
+  prepublish
+
+ ...
+ npm run dev
+```
+
+### ... TODO
 
 ## CHANGELOG
 
