@@ -1,21 +1,36 @@
-const program = require('commander')
-const pkg = require('../package.json')
+import { cac } from 'cac'
+import { outputScripts, execSingleScripts } from './scripts'
 
-import { outputScripts } from './scripts'
+type CommandListOption = {
+    r?: boolean,
+    run?: boolean,
+    m?: boolean,
+    multiple?: boolean
+}
 
-program.version(`${pkg.version}`, '-V, --version', 'output the current version')
+const erun = cac('erun')
 
-program.description(`
-Desc:
-    Let your script command run more simple!
-    readme: https://github.com/liuarui/easyrun/blob/main/README.md
-`)
+erun
+    .command('[root]', 'run script')
+    .alias('list')
+    .alias('l')
+    .option('-r, --run', `exec single script`)
+    .option('-m, --multiple', `multiple choice script`)
+    .action(async (root: string, option: CommandListOption) => {
+        try {
+            if (option.m) {
+                console.log('TODO')
+            } else if (option.r) {
+                execSingleScripts()
+            } else {
+                outputScripts()
+            }
+        } catch (e) {
+            process.exit(1)
+        }
+    })
 
-program.usage('<command> [options]')
 
-program
-    .command('l')
-    .description('console your project scripts')
-    .action(() => outputScripts())
-
-program.parse(process.argv)
+erun.help()
+erun.version(require('../package.json').version)
+erun.parse()
