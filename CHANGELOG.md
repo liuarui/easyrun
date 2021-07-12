@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/liuarui/easyrun/compare/v1.1.0...v1.1.1) (2021-07-12)
+
+
+### Bug Fixes
+
+* inquirer can't find ([a05542e](https://github.com/liuarui/easyrun/commit/a05542eb5ce9bcbee45c609c2c10968d72e82299))
+
+
+
 # [1.1.0](https://github.com/liuarui/easyrun/compare/v1.0.1...v1.1.0) (2021-07-11)
 
 
