@@ -2527,6 +2527,7 @@ ${section.body}` : section.body;
       }
   }
 
+  // 此处不用 import 是因为 node和rollup 有该bug [issues](https://github.com/nodejs/readable-stream/issues/348)
   const inquirer = require('inquirer');
   function getPackageJSONPath() {
       return `${process.cwd()}/package.json`;

@@ -10,6 +10,11 @@ export default {
         file: 'bin/erun.js',
         format: 'umd',
     },
-    external: [],
-    plugins: [resolve(), commonjs(), json(), typescript()],
+    plugins: [
+        typescript(),
+        resolve(),
+        commonjs(),
+        json(),
+    ],
+
 }
